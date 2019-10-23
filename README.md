@@ -19,9 +19,9 @@ The arguments in the function is the following:
 The output of the function is a color filter matrix:
 ```nodejs
 [
-    RedRed,     RedGreen,    RedB,       RedA,         RedOffset,
+    RedRed,     RedGreen,    RedBblue,   RedAlpha,     RedOffset,
     GreenRed,   GreenGreen,  GreenBlue,  GreenAlpha,   GOffset,
-    BlueRed,    BGreen,      BlueBlue,   BlueAlpha,    BOffset,
+    BlueRed,    BlueGreen,   BlueBlue,   BlueAlpha,    BOffset,
     AlphaRed,   AlphaGreen,  AlphaBlue,  AlphaAlpha,   AOffset,
 ]
 ```
