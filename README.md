@@ -35,6 +35,8 @@ for (var i = 0; i < data.length; i += 4) {
 }
 ```
 
+Test in browser: https://colorcorrection.firebaseapp.com/
+
 ## Motivation
 As you descent underwater some colors are absorbed more than others.
 The red color will disappear as the first thing which will make the image appear more blue and green.
