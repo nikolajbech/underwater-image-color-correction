@@ -1,10 +1,6 @@
 'use strict';
 
-module.exports = function (pixels, width, height) {
-    return getColorFilterMatrix(pixels, width, height)
-}
-
-function getColorFilterMatrix(pixels, width, height) {
+module.exports = function getColorFilterMatrix(pixels, width, height) {
 
     // Magic values:
     const numOfPixels = width * height
@@ -30,7 +26,7 @@ function getColorFilterMatrix(pixels, width, height) {
     const avg = calculateAverageColor(pixels, width, height)
 
     // Calculate shift amount:
-    let newAvgRed = avgRed
+    let newAvgRed = avg.r
     while (newAvgRed < minAvgRed) {
         const shifted = hueShiftRed(avg.r, avg.g, avg.b, hueShift)
         newAvgRed = shifted.r + shifted.g + shifted.b
@@ -75,9 +71,9 @@ function getColorFilterMatrix(pixels, width, height) {
     normalize.g.push(255)
     normalize.b.push(255)
 
-    adjust.r = findNormalizingInterval(normalize.r)
-    adjust.g = findNormalizingInterval(normalize.g)
-    adjust.b = findNormalizingInterval(normalize.b)
+    adjust.r = normalizingInterval(normalize.r)
+    adjust.g = normalizingInterval(normalize.g)
+    adjust.b = normalizingInterval(normalize.b)
 
     // Make histogram:
     const shifted = hueShiftRed(1, 1, 1, hueShift)
@@ -86,7 +82,7 @@ function getColorFilterMatrix(pixels, width, height) {
     const greenGain = 256 / (adjust.g.high - adjust.g.low)
     const blueGain = 256 / (adjust.b.high - adjust.b.low)
 
-    const redOffset = (-radjust.r.low / 256) * redGain
+    const redOffset = (-adjust.r.low / 256) * redGain
     const greenOffset = (-adjust.g.low / 256) * greenGain
     const blueOffset = (-adjust.b.low / 256) * blueGain
 

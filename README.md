@@ -3,7 +3,7 @@
 
 ## Installation
 
-`npm install @nikolajbech/underwater-image-color-correction`
+`npm i underwater-image-color-correction`
 
 ## Usage
 
