@@ -34,11 +34,11 @@ By adjusting each color channel, the colors can be restored and make the image a
 This algorithm aims at doing this automatically.
 
 ## Examples
-(https://github.com/nikolajbech/underwater-image-color-correction/raw/master/example1.jpg)
+![alt text](https://github.com/nikolajbech/underwater-image-color-correction/raw/master/example1.jpg)
 
-(https://github.com/nikolajbech/underwater-image-color-correction/raw/master/example2.jpg)
+![alt text](https://github.com/nikolajbech/underwater-image-color-correction/raw/master/example2.jpg)
 
-(https://github.com/nikolajbech/underwater-image-color-correction/raw/master/example3.jpg)
+![alt text](https://github.com/nikolajbech/underwater-image-color-correction/raw/master/example3.jpg)
 
 ## The algorithm
 
