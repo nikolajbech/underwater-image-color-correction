@@ -26,6 +26,15 @@ The output of the function is a color filter matrix:
 ]
 ```
 
+The color filter matrix can be applied by an external color filter library library or the following calculation:
+```nodejs
+for (var i = 0; i < data.length; i += 4) {
+    data[i] = data[i] * filter[0] + data[i + 1] * filter[1] + data[i + 2] * filter[2] + filter[4] * 255 // Red
+    data[i + 1] = data[i + 1] * filter[6] + filter[9] * 255; // Green
+    data[i + 2] = data[i + 2] * filter[12] + filter[14] * 255; // Blue
+}
+```
+
 ## Motivation
 As you descent underwater some colors are absorbed more than others.
 The red color will disappear as the first thing which will make the image appear more blue and green.
