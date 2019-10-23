@@ -17,6 +17,9 @@
   ],
   "author": "Nikolaj Bech Andersen",
   "license": "ISC",
+  "engines": {
+    "node": ">=4.2.4"
+  },
   "bugs": {
     "url": "https://github.com/nikolajbech/underwater-image-color-correction/issues"
   },

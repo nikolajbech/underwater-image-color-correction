@@ -1,4 +1,8 @@
-// underwater-image-color-correction
+'use strict';
+
+module.exports = function (pixels, width, height) {
+    return getColorFilterMatrix(pixels, width, height)
+}
 
 function getColorFilterMatrix(pixels, width, height) {
 
