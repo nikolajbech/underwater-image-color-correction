@@ -1,0 +1,24 @@
+{
+  "name": "underwater-image-color-correction",
+  "version": "1.0.0",
+  "description": "Underwater image color correction algorithm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikolajbech/underwater-image-color-correction.git"
+  },
+  "keywords": [
+    "underwater",
+    "color",
+    "correction"
+  ],
+  "author": "Nikolaj Bech Andersen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikolajbech/underwater-image-color-correction/issues"
+  },
+  "homepage": "https://github.com/nikolajbech/underwater-image-color-correction#readme"
+}
