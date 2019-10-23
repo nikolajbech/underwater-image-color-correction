@@ -16,7 +16,7 @@
     "correction"
   ],
   "author": "Nikolaj Bech Andersen",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "engines": {
     "node": ">=4.2.4"
   },
