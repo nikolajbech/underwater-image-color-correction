@@ -1,12 +1,13 @@
 # underwater-image-color-correction
 
-=========
-
-A small library that adds commas to numbers
 
 ## Installation
 
+`npm install @nikolajbech/underwater-image-color-correction`
 
 ## Usage
+
+    
+## Concept
 
     
