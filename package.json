@@ -1,6 +1,6 @@
 {
   "name": "underwater-image-color-correction",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Underwater image color correction algorithm",
   "main": "index.js",
   "scripts": {
