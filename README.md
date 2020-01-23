@@ -29,9 +29,9 @@ The output of the function is a color filter matrix:
 The color filter matrix can be applied by an external color filter library library or the following calculation:
 ```nodejs
 for (var i = 0; i < data.length; i += 4) {
-    data[i] = data[i] * filter[0] + data[i + 1] * filter[1] + data[i + 2] * filter[2] + filter[4] * 255 // Red
-    data[i + 1] = data[i + 1] * filter[6] + filter[9] * 255; // Green
-    data[i + 2] = data[i + 2] * filter[12] + filter[14] * 255; // Blue
+    data[i] = Math.min(255, Math.max(0, data[i] * filter[0] + data[i + 1] * filter[1] + data[i + 2] * filter[2] + filter[4] * 255)) // Red
+    data[i + 1] = Math.min(255, Math.max(0, data[i + 1] * filter[6] + filter[9] * 255)) // Green
+    data[i + 2] = Math.min(255, Math.max(0, data[i + 2] * filter[12] + filter[14] * 255)) // Blue
 }
 ```
 
